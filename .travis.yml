@@ -12,7 +12,7 @@ script:
   - docker run -e CI=true everestyeti/docker-react npm run test -- --coverage
 
   deploy:
-    provider: elasticbeanstalk
+    provider: elasticbeanstalkd
     region: "us-east-2"
     app: "docker"
     env: "Docker-env"
